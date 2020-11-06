@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: flex;
+    width: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#replay-skyscraper{
+    margin-top: 25px;
+}
+    .skyscraper{
+        text-align: center;
+
+    }
+    button{
+        cursor: pointer;
+        background-color: transparent;
+        border: transparent;
+
+    }
+    button:visited{
+        border: none;
+    }
+    
+    i{
+        font-size: 25px;
+    }
+
