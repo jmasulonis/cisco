@@ -5,6 +5,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cisco HTML5 Banners</title>
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 		<!-- Styles -->
@@ -12,28 +14,34 @@
 	</head>
 
 	<body onload="initSkyscraper();">
-		<div id="animation_container_skyscraper" style="
-        background-color: rgba(0, 188, 235, 1);
-        width: 160px;
-        height: 600px;
-      ">
-			<canvas id="canvas_skyscraper" width="160" height="600" style="
-          position: absolute;
-          display: block;
-          background-color: rgba(0, 188, 235, 1);
-        "></canvas>
-			<div id="dom_overlay_container_skyscraper" style="
-          pointer-events: none;
-          overflow: hidden;
-          width: 160px;
-          height: 600px;
-          position: absolute;
-          left: 0px;
-          top: 0px;
-          display: block;
-        "></div>
+		<div class="container">
+			<div id="animation_container_skyscraper" style="
+	        background-color: rgba(0, 188, 235, 1);
+	        width: 160px;
+	        height: 600px;
+	      ">
+				<canvas id="canvas_skyscraper" width="160" height="600" style="
+	          position: absolute;
+	          display: block;
+	          background-color: rgba(0, 188, 235, 1);
+	        "></canvas>
+				<div id="dom_overlay_container_skyscraper" style="
+	          pointer-events: none;
+	          overflow: hidden;
+	          width: 160px;
+	          height: 600px;
+	          position: absolute;
+	          left: 0px;
+	          top: 0px;
+	          display: block;
+	        "></div>
+			</div>
+			<nav>
+				<a href="https://jmasulonis.github.io/cisco-300x250/">350x250</a>
+				<button onclick="initSkyscraper();" id="replay-skyscraper"><i class="fas fa-reply"></i></button>
+				<a href="https://jmasulonis.github.io/cisco-728x90/">728x90</a>
+			</nav>
 		</div>
-		<button onclick="initSkyscraper();" id="replay-skyscraper"><i class="fas fa-reply"></i></button>
 		<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 		<script src="js/cisco-banner-skyscraper-scripts.js"></script>
 	</body>
